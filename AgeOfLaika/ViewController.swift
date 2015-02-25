@@ -27,9 +27,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func convertToHumanYearsPressed(sender: UIButton) {
-        let dogYearsConstant = 7 * enterHumanYearsTextField.text.toInt()!
-        dogYearsLabel.text = "Laika is " + "\(dogYearsConstant) in dog years"
+        dogYearsLabel.text = "Laika is " + "\(7 * enterHumanYearsTextField.text.toInt()!) in dog years"
         dogYearsLabel.hidden = false
+        enterHumanYearsTextField.resignFirstResponder()
     }
 
 }

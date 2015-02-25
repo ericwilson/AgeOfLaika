@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var enterHumanYearsTextField: UITextField!
+    
+    @IBOutlet weak var dogYearsLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +26,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func convertToHumanYearsPressed(sender: UIButton) {
+        let dogYearsConstant = 7 * enterHumanYearsTextField.text.toInt()!
+        dogYearsLabel.text = "Laika is " + "\(dogYearsConstant) in dog years"
+        dogYearsLabel.hidden = false
+    }
 
 }
 

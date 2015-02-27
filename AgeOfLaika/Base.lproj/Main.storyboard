@@ -26,6 +26,9 @@
                                 <state key="normal" title="Convert to Human Years">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="136" width="202" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="convertToHumanYearsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kl5-0N-31S"/>
                                 </connections>
@@ -42,8 +45,30 @@
                                     <rect key="frame" x="16" y="229" width="337" height="307"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZb-v4-tOR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Convert to Real Dog Years">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="174" width="202" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="convertToRealDogYearsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="793-m7-uuu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="DZb-v4-tOR"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="DZb-v4-tOR"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="dogYearsLabel" destination="EQ2-aj-kcX" id="RPt-Jx-b4s"/>
